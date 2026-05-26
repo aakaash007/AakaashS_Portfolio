@@ -1,4 +1,8 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import vibrasenseImg from "@/assets/MajorProjVibrasense.png";
+import yelpcampImg from "@/assets/YelpCamp.png";
+import snakeImg from "@/assets/SnakeGame.png";
+import resumeAnalyser from "@/assets/NLPResumeAnalyser.png";
 
 const projects = [
   // {
@@ -35,7 +39,7 @@ const projects = [
     title: "VibraSense",
     description:
       "Smart IoT enabled Gloves to deliver vibrational braille for the blind-deaf community.",
-    image: "/projects/MajorProjVibrasense.png",
+    image: vibrasenseImg,
     tags: ["IoT", "Websockets", "C", "Arduino", "Hardware"],
     // demoUrl: "",
     githubUrl: "https://github.com/aakaash007/VibraSense",
@@ -45,7 +49,7 @@ const projects = [
     title: "YelpCamp",
     description:
       "Website that allowed social interaction based on campsites that users can post, review, etc.",
-    image: "/projects/YelpCamp.png",
+    image: yelpcampImg,
     tags: ["React", "MongoDB", "Node.js", "Express", "JavaScript"],
     // demoUrl: "",
     // githubUrl: ,
@@ -54,7 +58,7 @@ const projects = [
     id: 6,
     title: "Multiplayer SnakeGame",
     description: "Two player Snake Game, until one remains.",
-    image: "/projects/SnakeGame.png",
+    image: snakeImg,
     tags: ["Java", "Object-Oriented Programming", "Java Swing"],
     // demoUrl: "",
     githubUrl: "https://github.com/aakaash007/Mutiplayer-SnakeGame",
@@ -64,7 +68,7 @@ const projects = [
     title: "Resume Analyser",
     description:
       "An ML based project wherein users can check the score of their CVs with respect to some particular Job Description of a company.",
-    image: "/projects/NLPResumeAnalyser.png",
+    image: resumeAnalyser,
     tags: ["Python", "NLP", "Machine Learning", "Streamlit"],
     // demoUrl: "",
     githubUrl: "https://github.com/aakaash007/ResumeAnalyser",

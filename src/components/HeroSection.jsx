@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+import myimage from "@/assets/face-outline.png";
 
 export const HeroSection = () => {
   return (
@@ -8,7 +9,8 @@ export const HeroSection = () => {
     >
       {/* Left decorative outline image (transparent background, subtle) */}
       <img
-        src="/face-outline.png"
+        // src="/face-outline.png"
+        src={myimage}
         alt="."
         className="pointer-events-none select-none absolute top-1/2 -translate-y-1/2 left-0 w-2/5 opacity-20 bg-transparent"
         style={{ filter: "grayscale(100%) contrast(0%)", mixBlendMode: "normal", backgroundColor: "transparent" }}
@@ -16,7 +18,8 @@ export const HeroSection = () => {
 
       {/* Right decorative outline image (mirrored, transparent background, subtle) */}
       <img
-        src="/face-outline.png"
+        // src="/face-outline.png"
+        src={myimage}
         alt="."
         className="pointer-events-none select-none absolute top-1/2 -translate-y-1/2 right-0 w-2/5 opacity-20 bg-transparent"
         style={{ transform: "scaleX(-1)", filter: "grayscale(100%) contrast(0%)", mixBlendMode: "normal", backgroundColor: "transparent" }}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import spitLogo from "@/assets/SPITlogo.png";
 
 const skills = [
   // Frontend
@@ -49,12 +50,12 @@ const skills = [
   { name: "Python", level: 85, category: "languages", logo: "https://cdn.simpleicons.org/python" },
 
   // Courses
-  { name: "Data Structures & Algorithms", level: 90, category: "courses", logo: "/projects/SPITlogo.png" },
-  { name: "Database Management System", level: 85, category: "courses", logo: "/projects/SPITlogo.png" },
-  { name: "Operating Systems", level: 70, category: "courses", logo: "/projects/SPITlogo.png" },
-  { name: "Human Machine Interaction", level: 80, category: "courses", logo: "/projects/SPITlogo.png" },
-  { name: "Principles of Soft Computing", level: 80, category: "courses", logo: "/projects/SPITlogo.png" },
-  { name: "AI & Machine Learning", level: 85, category: "courses", logo: "/projects/SPITlogo.png" },
+  { name: "Data Structures & Algorithms", level: 90, category: "courses", logo: spitLogo },
+  { name: "Database Management System", level: 85, category: "courses", logo: spitLogo },
+  { name: "Operating Systems", level: 70, category: "courses", logo: spitLogo },
+  { name: "Human Machine Interaction", level: 80, category: "courses", logo: spitLogo },
+  { name: "Principles of Soft Computing", level: 80, category: "courses", logo: spitLogo },
+  { name: "AI & Machine Learning", level: 85, category: "courses", logo: spitLogo },
 ];
 
 const categories = [
