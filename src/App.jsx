@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { Toaster } from "@/components/ui/toaster";
@@ -7,14 +7,35 @@ function App() {
   return (
     <>
       <Toaster />
-      <HashRouter>
+      <BrowserRouter basename="/AakaashS_Portfolio">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
 
 export default App;
+
+// import { HashRouter, Route, Routes } from "react-router-dom";
+// import { Home } from "./pages/Home";
+// import { NotFound } from "./pages/NotFound";
+// import { Toaster } from "@/components/ui/toaster";
+
+// function App() {
+//   return (
+//     <>
+//       <Toaster />
+//       <HashRouter>
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="*" element={<NotFound />} />
+//         </Routes>
+//       </HashRouter>
+//     </>
+//   );
+// }
+
+// export default App;
