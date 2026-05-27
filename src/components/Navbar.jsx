@@ -67,14 +67,17 @@ export const Navbar = () => {
 
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 bg-background/95 backdrop-blur-md z-40",
+            "flex flex-col items-center",
+            "overflow-y-auto",
+            "pt-24 pb-10 px-6",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           )}
         >
-          <div className="flex flex-col space-y-8 text-xl">
+          <div className="flex flex-col items-center space-y-8 text-xl w-full">
             {navItems.map((item, key) => (
               <a
                 key={key}
@@ -85,6 +88,11 @@ export const Navbar = () => {
                 {item.name}
               </a>
             ))}
+
+            {/* Mobile Theme Toggle */}
+            <div className="pt-4">
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </div>
